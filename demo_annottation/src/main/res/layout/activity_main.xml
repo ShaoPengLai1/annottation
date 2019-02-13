@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/cicleView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="圆形图"
+            android:onClick="aa"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/radiuView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="圆角：7DP"
+            android:onClick="bb"
+            tools:ignore="OnClick"
+            />
+        <Button
+            android:id="@+id/wH"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="宽高比1：2"
+            android:onClick="cc"
+            tools:ignore="OnClick"
+            />
+        <Button
+            android:id="@+id/loginGif"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="加载动图"
+            android:onClick="dd"
+            tools:ignore="OnClick"
+            />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/reflex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取注解的值"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/reflexList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="反射添加集合"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
