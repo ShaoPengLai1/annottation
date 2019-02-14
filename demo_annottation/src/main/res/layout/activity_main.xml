@@ -51,12 +51,13 @@
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/simpleView"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="200dp"
+        />
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/simpleView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+        app:progressBarImageScaleType="centerInside"
         />
     <Button
         android:id="@+id/reflex"
@@ -64,6 +65,8 @@
         android:layout_height="wrap_content"
         android:text="获取注解的值"
         android:layout_gravity="center"
+        android:onClick="ee"
+        tools:ignore="OnClick"
         />
     <Button
         android:id="@+id/reflexList"
@@ -71,6 +74,8 @@
         android:layout_height="wrap_content"
         android:text="反射添加集合"
         android:layout_gravity="center"
+        android:onClick="ff"
+        tools:ignore="OnClick"
         />
 
 </LinearLayout>
