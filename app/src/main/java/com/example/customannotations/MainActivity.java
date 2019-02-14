@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @InjectViewAnnotation(R.id.dianwo)
     Button button;
-    @FindClick(id = R.id.dianwo)
+    //@FindClick(id = R.id.dianwo)
     Button but;
     @InjectViewAnnotation(R.id.title)
     TextView title;
